@@ -1,0 +1,53 @@
+CRUD producto
+
+CRUD cliente
+
+CRUD empleado
+
+Visualizacion de catalogo de productos
+
+Interfaz para gestionar ordenes de compra
+
+Emision de control de facturas
+
+Historial de ventas
+
+Generacion de reportes de empleado
+
+Emision de ordenes de despacho a departamentos
+
+Emision de carnet para el cliente
+
+Interfaz que permita realizar pagos (efectivo, cheque, tarjeta debito, tarjeta credito)
+
+Módulo de gestión de clientes
+
+Modulo de reportes del empleado (contro de entrada y salida)
+
+Sistema de registro e inicio de sesion
+
+Emision de orden de reposicion de inventario
+
+Modulo de despacho (Procesar pedidos y actualizacion de estatus de clientes)
+
+Emision periodica del DiarioDulce
+
+Gestion de inventario
+
+Control y canjeo de puntos de clientes
+
+Modulo de soporte
+
+Modulo de control de nomina
+
+Ubicacion de sucursales
+
+Organizacion por categoria, precio, top 10
+
+
+
+
+
+
+
+
