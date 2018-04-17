@@ -1,0 +1,12 @@
+-Carnet de clientes
+-Asistencia empleados
+-Ganancia en pediodos de tiempo (diaria, semanal, mensual)
+-Ventas por sucursal
+-Inventario por sucursal
+-Top 10 productos (Mas vendidos)
+-Diario Dulce
+-Perfil Usuario
+-Facturas
+-Ordenes de compras
+
+
