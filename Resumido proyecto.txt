@@ -1,0 +1,66 @@
+poner servicio web
+entrega en menos de 48 horas
+
+proceso de solicitud de pedido
+mostrar productos disponibles
+permitir varios metodos de pago (y varias tarjetas)
+emitir factura
+alerta a dep. de despacho para preparar la orden (max 2 horas)
+pedido debe pasar a "listo para entregar"
+dep de entrega busca paquete, entregarlo y cambiar estado a "entregado"
+sistema de puntos (add 1 punto si compra en una sucursal)
+manejar venta, descuento inventario,control y canjeo de puntos
+permitir varios metodos pago (local)
+almacenar metodo de pago
+orden reposicion automatica (<=100 unid. producto) ----> emitir orden de compra de 10.000 unids de ese producto a la fabrica (pero debe de aprobarse)
+orden completada ---> orden de pedido para fabriba "ofrecer propuesta de orden de compra"
+emision diario dulce (20 dias) (catalogo de productos en descuento, valido por 10 dias despues de salir)
+capaz de emitir diario
+afiliar usuarios
+solicitar presupuesto de un pedido y reservable (si es aceptado, emitir orden de pedido con FECHA)
+ubicar nueva mercancia o reposicion en su almacen correspondiente (zona A, B, C, D...etc)
+nunca anaqueles vacios---> alerta a "jefe pasillos" cuando queden 20 unids de producto
+cualquier tipo cliente (hosteles, locales, personas etc)
+servicios disponibles (Asesoria de profecional comercial y tecnica sobre los productos
+		       Seguimiento de nuestra cartera de clientes
+		       novedades y actualizacion de precios
+		       condiciones de compra y entrega)
+desarrollar pag con info sobre (linea productos,novedades,promociones,pedidios y gestion de procesos internos)
+variabilidad de clientes
+afiliarse a la red para poder comprar local
+emitir carnet cliente dentro del modulo gestion clientes "diseñar carnet"
+1 pt = 100 BsF
+carnet (numero ID = (codigo tienda)-(codigo cliente)8 digitos) ejemplo 01-00.000.001
+	clientes juridicos	rif
+				denominacion comercial y razon social
+				telefonos y correo electronico
+				pag web
+				capital disponible
+				personas de contacto
+				medios de pago
+				direccion fiscal
+				direccion fisica principal
+	clientes naturales	rif
+				ci
+				nombres y apellidos
+				telefonos y correos electronicos
+				direccion habitacion
+				medios de pago
+modulo de reportes
+Control de nomina (control de horario, vacaciones,salarios,beneficios y mas)
+control de entrada salida (reporte diario, semana, mensual)
+	
+procesar archivo excel con (ci empleado,fecha,hora entrada y hora salida)
++4000 empleados 
+
+DATOS
+	datos mejores caramelos
+	lugar de sucursales
+
+
+
+
+
+
+
+
