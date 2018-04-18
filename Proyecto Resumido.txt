@@ -1,6 +1,5 @@
 poner servicio web
 entrega en menos de 48 horas
-
 proceso de solicitud de pedido
 mostrar productos disponibles
 permitir varios metodos de pago (y varias tarjetas)
@@ -28,7 +27,7 @@ servicios disponibles (Asesoria de profecional comercial y tecnica sobre los pro
 desarrollar pag con info sobre (linea productos,novedades,promociones,pedidios y gestion de procesos internos)
 variabilidad de clientes
 afiliarse a la red para poder comprar local
-emitir carnet cliente dentro del modulo gestion clientes "diseñar carnet"
+emitir carnet cliente dentro del modulo gestion clientes "diseÃ±ar carnet"
 1 pt = 100 BsF
 carnet (numero ID = (codigo tienda)-(codigo cliente)8 digitos) ejemplo 01-00.000.001
 	clientes juridicos	rif
