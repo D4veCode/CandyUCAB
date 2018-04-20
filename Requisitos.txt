@@ -13,7 +13,7 @@
 -Sistema de registro e inicio de sesion 
 -Emision de orden de reposicion de inventario
 -Reposicion automatica de inventario
--generar alertas (poca disponibilidad de productos)
+-Generar alertas (poca disponibilidad de productos)
 -Modulo de despacho (Procesar pedidos, actualizacion de estatus de pedidos y envios)
 -Emision periodica del DiarioDulce
 -Gestion de inventario (ubicacion productos por tienda)
