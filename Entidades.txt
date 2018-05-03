@@ -1,0 +1,43 @@
+USUARIO => [#*ID, clave, usuario, fecha_creacion, ultima_vez, avatar]
+
+CLIENTE=> [#*RIF, email, num_carnet]
+   natural=> [nombre, s_nombre, apellido, s_apellido, #*CI, foto_carnet]
+   juridico=> [razon_social, deno_comercial, capital, pagina web]
+
+CONTACTO=> [#*CI, nombre, apellido, telefono]
+
+EMPLEADO=>[#*CI, nombre, s_nombre, apellido, s_apellido, salario]
+
+SUCURSAL=>[#*COD, nombre]
+
+PRODUCTO=>[#*COD, nombre, tipo, precio, imagen, descripcion, ]
+
+INVENTARIO=>[#*COD, cant_stock, cant_max]
+
+PRESUPUESTO(SIN PAGAR)=>[#*COD, fecha, monto]
+
+PEDIDO=>[#*COD, fecha, monto, estado]
+
+LUGAR=>[#*COD, nombre, tipo]
+
+TELEFONO=>[#*COD, numero, tipo]
+
+VENTA=>[#*COD, fecha, monto]
+
+ROL=>[#*COD, tipo]
+
+PUNTO=>[#*COD, cantidad, precio, fecha_adq]
+
+INGREDIENTE=>[#*COD, nombre]
+
+FÁBRICA=>[#*COD, ]
+
+PAGO=>[#*COD]
+  efectivo
+  debito=>[numero, banco, nombre_titular]
+  credito=>[numero, banco, fecha_ven, codigo_segu, nombre_titular]
+  cheque=>[numero_cuenta, banco, fecha]
+ALMACEN(lugar caramelo)
+CONTROL
+DIARIO_DULCE(descuento)
+
