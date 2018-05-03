@@ -32,12 +32,15 @@ INGREDIENTE=>[#*COD, nombre]
 
 FÁBRICA=>[#*COD, ]
 
-PAGO=>[#*COD]
+METODO_PAGO=>[#*COD]
   efectivo
-  debito=>[numero, banco, nombre_titular]
+  debito=>[numero, banco, nombre_titular, CI]
   credito=>[numero, banco, fecha_ven, codigo_segu, nombre_titular]
   cheque=>[numero_cuenta, banco, fecha]
-ALMACEN(lugar caramelo)
-CONTROL
-DIARIO_DULCE(descuento)
+  
+ALMACEN(lugar caramelo)=>[#*COD, fila, zona]
+
+CONTROL=>[#*COD, dia]
+
+DIARIO_DULCE(descuento)=>[#*COD, fecha_inicio, fecha_enqueacabo]
 
