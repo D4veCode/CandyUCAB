@@ -44,3 +44,5 @@ CONTROL=>[#*COD, fecha]
 
 DIARIO_DULCE(descuento)=>[#*COD, fecha_inicio, fecha_final]
 
+BENEFICIO=>[#*COD, tipo, descripcion]
+
