@@ -65,17 +65,19 @@ Fabrica-Lugar 1 a 1
 Sucursal-Lugar 1 a N
 Empleado-Empleado 1 a N
 Cliente-Punto 1 a N
-Fabric-Producto 1 a N
+Fabrica-Producto 1 a N
 Producto-Ingrediente 1 a N
 Empleado-Rol 1 a N
 Almacen-Sucursal 1 a N
 Cliente_Juridico-Contacto 1 a N
+Control-Empleado 1 a N
 
 Empleado-Beneficio N a N 
 Producto_Presupuesto N a N
 Usuario-Presupuesto N a N
 Sucursal-Venta N a N
-
+Almacen-Producto N a N
+Inventario-Producto N a N
 
 
 
