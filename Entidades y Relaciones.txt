@@ -54,6 +54,8 @@ BENEFICIO=>[#*COD, tipo, descripcion]
 Usuario-Cliente 1 a 1 registro
 Cliente-Telefono 1 a N 
 Empleado-Telefono 1 a N
+Fabrica-Telefono 1 a N
+Sucursal-Telefono 1 a N
 Diario_Dulce-Producto 1 a N 
 Fabrica-Sucurcal 1 a N
 Cliente-Lugar 1 a N
@@ -64,7 +66,9 @@ Empleado-Empleado 1 a N
 Cliente-Punto 1 a N
 Fabric-Producto 1 a N
 Producto-Ingrediente 1 a N
+Empleado-Rol 1 a N
 Empleado-Beneficio N a N
+Cliente_Juridico-Contacto 1 a N
 
 
 
