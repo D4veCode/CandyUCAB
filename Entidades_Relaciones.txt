@@ -77,7 +77,13 @@ Producto_Presupuesto N a N
 Usuario-Presupuesto N a N
 Sucursal-Venta N a N
 Almacen-Producto N a N
+Cliente-Metodos_Pago N a N
+Usuarios-Metodo_Pago N a N
 Inventario-Producto N a N
+Cliente-Presupuesto N a N
+Sucursal_Venta-Cliente_Presupuesto N a N
+Sv_cp-Cl_Mp N a N
+Sv_Cp-Us_Mp N a N
 
 
 
