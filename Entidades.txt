@@ -38,7 +38,7 @@ METODO_PAGO=>[#*COD]
   credito=>[numero, banco, fecha_ven, codigo_segu, nombre_titular]
   cheque=>[numero_cuenta, banco, fecha]
   
-ALMACEN(lugar caramelo)=>[#*COD, fila, zona]
+ALMACEN(lugar caramelo)=>[#*COD, cantidad_producto,tipo,pasillo, zona]
 
 CONTROL=>[#*COD, fecha]
 
