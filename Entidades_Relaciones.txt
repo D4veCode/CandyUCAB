@@ -52,6 +52,7 @@ BENEFICIO=>[#*COD, tipo, descripcion]
    RELACIONES:
 
 Usuario-Cliente 1 a 1 registro
+Usuario-Empleado 1 a 1 registro
 Venta-Pedido 1 a 1
 Cliente-Telefono 1 a N 
 Empleado-Telefono 1 a N
@@ -77,12 +78,13 @@ Producto_Presupuesto N a N
 Usuario-Presupuesto N a N
 Sucursal-Venta N a N
 Almacen-Producto N a N
-Cliente-MetodosPago N a N
+Cliente-MetodoPago N a N
 Usuario-MetodoPago N a N
 Inventario-Producto N a N
 Usuario-Presupuesto N a N
 Usuario_Presupuesto-Usuario_MetodoPago: VentaOnline N a N
 VentaOnline-Pedido: Factura Online N a N
+Cliente_MetodoPago-Sucursal_Venta: VentaLocal N a N
 
 
 
