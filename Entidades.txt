@@ -42,5 +42,5 @@ ALMACEN(lugar caramelo)=>[#*COD, fila, zona]
 
 CONTROL=>[#*COD, dia]
 
-DIARIO_DULCE(descuento)=>[#*COD, fecha_inicio, fecha_enqueacabo]
+DIARIO_DULCE(descuento)=>[#*COD, fecha_inicio, fecha_final]
 
