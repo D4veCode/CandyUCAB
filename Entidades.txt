@@ -10,7 +10,7 @@ EMPLEADO=>[#*CI, nombre, s_nombre, apellido, s_apellido, salario]
 
 SUCURSAL=>[#*COD, nombre]
 
-PRODUCTO=>[#*COD, nombre, tipo, precio, imagen, descripcion, ]
+PRODUCTO=>[#*COD, nombre, tipo, precio, imagen, descripcion]
 
 INVENTARIO=>[#*COD, cant_stock, cant_max]
 
@@ -40,7 +40,7 @@ METODO_PAGO=>[#*COD]
   
 ALMACEN(lugar caramelo)=>[#*COD, fila, zona]
 
-CONTROL=>[#*COD, dia]
+CONTROL=>[#*COD, fecha]
 
 DIARIO_DULCE(descuento)=>[#*COD, fecha_inicio, fecha_final]
 
