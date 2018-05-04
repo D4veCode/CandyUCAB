@@ -40,7 +40,7 @@ METODO_PAGO=>[#*COD]
   
 ALMACEN(lugar caramelo)=>[#*COD, cantidad_producto,tipo,pasillo, zona]
 
-CONTROL=>[#*COD, fecha]
+CONTROL=>[#*COD, hora_inicio, hora_fin]
 
 DIARIO_DULCE(descuento)=>[#*COD, fecha_inicio, fecha_final]
 
@@ -62,7 +62,8 @@ Fabrica-Lugar 1 a 1
 Sucursal-Lugar 1 a N
 Empleado-Empleado 1 a N
 Cliente-Punto 1 a N
-Cliente-Sucursal N a N
+Fabric-Producto 1 a N
+Producto-Ingrediente 1 a N
 Empleado-Beneficio N a N
 
 
