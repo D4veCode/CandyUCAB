@@ -51,8 +51,8 @@ BENEFICIO=>[#*COD, tipo, descripcion]
 
    RELACIONES:
 
-Usuario-Cliente 1 a 1 registro
-Usuario-Empleado 1 a 1 registro
+Cliente-Usuario 1 a 1 registro 
+Empleado-Usuario 1 a 1 registro
 Venta-Pedido 1 a 1
 Cliente-Telefono 1 a N 
 Empleado-Telefono 1 a N
@@ -72,6 +72,7 @@ Empleado-Rol 1 a N
 Almacen-Sucursal 1 a N
 Cliente_Juridico-Contacto 1 a N
 Control-Empleado 1 a N
+Empleado-Sucursal 1 a N 
 
 Empleado-Beneficio N a N 
 Producto_Presupuesto N a N
