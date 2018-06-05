@@ -145,7 +145,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="47" width="1394" height="798" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49925262" visible="true" weight="0.25091174" />
       <window_info id="TODO" order="4" show_stripe_button="false" sideWeight="0.5007474" side_tool="true" weight="0.24981844" />
