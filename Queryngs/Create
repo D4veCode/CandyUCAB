@@ -1,0 +1,113 @@
+CREATE DataBase CandyUcabDB;
+
+CREATE Table Usuario(
+	ID int(10) SERIAL PRIMARY KEY,
+	Nombre_Usuario  varchar(20),
+	Contraseña varchar(20) NOT NULL,
+	Contraint Pk_Usuario PRIMARY KEY(Nombre_Usuario)
+	);
+
+CREATE Table Lugar(
+	ID int(4),
+	Tipo varchar(3) NOT NULL,
+	Nombre varchar(20) NOT NULL,
+	Fk_Lugar int(4),
+	Contraint Pk_Lugar PRIMARY KEY(ID),
+	);
+
+CREATE Table Cliente_Natural(
+	ID int(10) SERIAL PRIMARY KEY
+	Rif varchar(12),
+	Ci int(20), 
+	Num_Carnet varchar(12),
+	E-mail varchar(20) NOT NULL UNIQUE,
+	Nombre varchar(20) NOT NULL,
+	Apellido varchar(20) NOT NULL,
+	Apellido2 varchar(20), 
+	FK_Usuario varchar(20) NOT NULL,
+	FK_Lugar int(4) NOT NULL,
+	Contraint Pk_ClienteN PRIMARY KEY(Rif,Ci,Num_Carnet)
+	);
+
+CREATE Table Cliente_Juridico(
+	ID int(10) SERIAL PRIMARY KEY,
+	Rif varchar(12),
+	Razon_s varchar(20) NOT NULL UNIQUE,
+	Num_Carnet varchar(12),
+	E-mail varchar(20) NOT NULL UNIQUE,
+	Denominacion_C varchar(120) NOT NULL,
+	Pagina_web varchar(60),
+	FK_Usuario varchar(20) NOT NULL,
+	FK_Lugar int(4) NOT NULL,
+	Contraint Pk_ClienteJ PRIMARY KEY(Rif, Num_Carnet)
+	);
+
+CREATE Table Contacto(
+	ID int(10),
+	Ci int(20), 
+	Nombre varchar(20) NOT NULL,
+	Apellido varchar(20) NOT NULL,
+	Fk_Juridico varchar(12),
+	Contraint Pk_Contacto SERIAL PRIMARY KEY(ID)
+	);
+
+CREATE Table Sucursal(
+	Cod int(2),
+	Nombre varchar(20) NOT NULL,
+	FK_Lugar int(4) NOT NULL,
+	Contraint Pk_Sucursal SERIAL PRIMARY KEY(Cod)
+	);
+
+CREATE Table Telefono (por hacer)------------------------------------------------------------------------------------------
+
+CREATE Table Empleado(
+	ID int(10) SERIAL PRIMARY KEY,
+	Ci int(20),
+	Nombre varchar(20) NOT NULL,
+	Nombre2 varchar(20),
+	Apellido varchar(20) NOT NULL,
+	Apellido2 varchar(20),
+	Salario double NOT NULL
+	FK_Lugar int(4) NOT NULL,
+	Fk_Sucursal int(2) NOT NULL,
+	Fk_Usuario varchar(20) NOT NULL,
+	Contraint Pk_Empleado PRIMARY KEY(Ci)
+	);
+
+CREATE Table Tipo_Producto(
+	ID int(2),
+	Nombre varchar(20) NOT NULL,
+	Contraint Pk_TProd SERIAL PRIMARY KEY(ID)
+	);
+
+CREATE Table Producto(
+	ID int(3),
+	Nombre varchar(20) NOT NULL,
+	Precio double NOT NULL,
+	Descripcion varchar(120) NOT NULL,
+	Fk_tipo int(2) NOT NULL,
+	Contraint Pk_Producto SERIAL PRIMARY KEY(ID)
+	);
+
+CREATE Table Diario(
+	ID int(3),
+	Fecha_i timestamp, NOT NULL
+	Fecha_f timestamp, NOT NULL
+	Contraint Pk_Diario SERIAL PRIMARY KEY(ID)
+	);
+
+CREATE Table Diario_Dulce(
+	ID int(5)
+	Fk_Producto int(3) NOT NULL,
+	Fk_Diario int(3) NOT NULL,
+	Contraint Pk_DiarioDulce SERIAL PRIMARY KEY(ID)
+	);
+
+CREATE Table Inventario(
+	ID int(4),
+	Cant_Stock int(10) NOT NULL,
+	Cant_Max int(10) NOT NULL,
+	Fk_Sucursal int(2) NOT NULL,
+	Fk_Producto int(3) NOT NULL,
+	Contraint Pk_DiarioDulce SERIAL PRIMARY KEY(ID)
+	)
