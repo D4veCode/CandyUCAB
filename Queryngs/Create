@@ -4,6 +4,7 @@ CREATE Table Usuario(
 	ID int(10) SERIAL PRIMARY KEY,
 	Nombre_Usuario  varchar(20),
 	Contraseña varchar(20) NOT NULL,
+	E-mail  varchar(30) NOT NULL UNIQUE,
 	Contraint Pk_Usuario PRIMARY KEY(Nombre_Usuario)
 	);
 
@@ -21,7 +22,7 @@ CREATE Table Cliente_Natural(
 	Rif varchar(12),
 	Ci int(20), 
 	Num_Carnet varchar(12),
-	E-mail varchar(20) NOT NULL UNIQUE,
+	E-mail  varchar(30) NOT NULL UNIQUE,
 	Nombre varchar(20) NOT NULL,
 	Apellido varchar(20) NOT NULL,
 	Apellido2 varchar(20), 
@@ -35,7 +36,7 @@ CREATE Table Cliente_Juridico(
 	Rif varchar(12),
 	Razon_s varchar(20) NOT NULL UNIQUE,
 	Num_Carnet varchar(12),
-	E-mail varchar(20) NOT NULL UNIQUE,
+	E-mail  varchar(30) NOT NULL UNIQUE,
 	Denominacion_C varchar(120) NOT NULL,
 	Pagina_web varchar(60),
 	FK_Usuario varchar(20) NOT NULL,
