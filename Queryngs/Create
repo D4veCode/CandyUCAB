@@ -13,6 +13,7 @@ CREATE Table Lugar(
 	Nombre varchar(20) NOT NULL,
 	Fk_Lugar int(4),
 	Contraint Pk_Lugar PRIMARY KEY(ID),
+	FOREIGN KEY Fk_Lugar REFERENCES Lugar(ID)
 	);
 
 CREATE Table Cliente_Natural(
