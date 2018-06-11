@@ -3,7 +3,9 @@ from flask import jsonify
 from candyucab import app
 
 
-"""@app.route('/')
+@app.route('/')
 def home():
-    return
-"""
+    db = candyucab.db
+    users = db.get_all_users()
+
+    return jsonify(users[0][0])
