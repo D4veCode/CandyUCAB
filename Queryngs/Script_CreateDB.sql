@@ -10,7 +10,7 @@ CREATE Table Usuario(
 CREATE Table Lugar(
 	ID int,
 	Tipo varchar(3) NOT NULL,
-	Nombre varchar(20) NOT NULL,
+	Nombre varchar(40) NOT NULL,
 	Fk_Lugar int,
 	Constraint Pk_Lugar PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Lugar) REFERENCES Lugar (ID)
