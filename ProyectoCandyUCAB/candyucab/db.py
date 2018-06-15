@@ -1,31 +1,19 @@
-import psycopg2
-import psycopg2.extras
+from pg import DB
 
 
-def connect():
-    con = psycopg2.connect("dbname=blog4geeks user=postgres password=root host=localhost")
-    cur = con.cursor(cursor_factory=psycopg2.extras.DictCursor)
-    return cur
+def connect2():
+    db = DB(dbname='CandyUCABLakra', user='postgres', passwd='root', host='localhost', port=5432)
+
+    return db
 
 
-def close(cur):
+def get_all_productos():
+    con = connect2()
 
-    cur.close()
+    q = con.query("select * from producto")
 
+    productos = q.dictresult()
 
-"""def cursor(con):
-    cur = con.cursor()
-    return cur
-"""
+    con.close()
 
-
-def get_all_users():
-    cur = connect()
-
-    cur.execute("select * from users")
-
-    products = cur.fetchall()
-
-    close(cur)
-
-    return products
+    return productos
