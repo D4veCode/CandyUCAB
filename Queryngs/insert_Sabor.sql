@@ -1,21 +1,22 @@
-Insert into sabor(id,nombre)values(1,'Menta');
-Insert into sabor(id,nombre)values(2,'Fresa');
-Insert into sabor(id,nombre)values(3,'Lima');
-Insert into sabor(id,nombre)values(4,'Naranja');
-Insert into sabor(id,nombre)values(5,'Melocoton');
-Insert into sabor(id,nombre)values(6,'Patilla');
-Insert into sabor(id,nombre)values(7,'Manzana');
-Insert into sabor(id,nombre)values(8,'Eucalipto');
-Insert into sabor(id,nombre)values(9,'Limon');
-Insert into sabor(id,nombre)values(10,'Melisa');
-Insert into sabor(id,nombre)values(11,'Limon fresh');
-Insert into sabor(id,nombre)values(12,'Piña');
-Insert into sabor(id,nombre)values(13,'Cereza');
-Insert into sabor(id,nombre)values(14,'Choco tradicional');
-Insert into sabor(id,nombre)values(15,'Cafe expresso');
-Insert into sabor(id,nombre)values(16,'Capuccino');
-Insert into sabor(id,nombre)values(17,'Fresa con nata');
-Insert into sabor(id,nombre)values(18,'Nata');
-Insert into sabor(id,nombre)values(19,'Mousse de limon');
-Insert into sabor(id,nombre)values(20,'Fresa picante');
-Insert into sabor(id,nombre)values(21,'Miel');
+Insert into sabor(id,nombre)values(
+  1,'Menta'),
+(2,'Fresa'),
+(3,'Lima'),
+(4,'Naranja'),
+(5,'Melocoton'),
+(6,'Patilla'),
+(7,'Manzana'),
+(8,'Eucalipto'),
+(9,'Limon'),
+(10,'Melisa'),
+(11,'Limon fresh'),
+(12,'Piña'),
+(13,'Cereza'),
+(14,'Choco tradicional'),
+(15,'Cafe expresso'),
+(16,'Capuccino'),
+(17,'Fresa con nata'),
+(18,'Nata'),
+(19,'Mousse de limon'),
+(20,'Fresa picante'),
+(21,'Miel');
