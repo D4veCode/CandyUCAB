@@ -95,7 +95,6 @@ CREATE table Telefono(
 	Constraint Pk_Telefono PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Contacto) REFERENCES Contacto(ID),
 	FOREIGN KEY (Fk_Natural ) REFERENCES Cliente_natural(ID),
-	FOREIGN KEY (Fk_Juridico) REFERENCES Cliente_juridico(ID),
 	FOREIGN KEY (Fk_Empleado) REFERENCES Empleado(ID)
 	);
 
