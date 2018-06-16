@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href=""/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/mdb/css/mdb.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 <!--===============================================================================================-->
@@ -75,6 +76,7 @@
 			</nav>
 		</div>
 
+		{% if session['logged_in'] == True %}
 		<!-- Header Icon -->
 		<div class="header-icons">
 			<a href="#" class="header-wrapicon1 dis-block">
@@ -161,6 +163,19 @@
 				</div>
 			</div>
 		</div>
+        {%else%}
+        <div class="header-icons">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdowntop2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Registro
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdowntop2">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterFormNat">Cliente Natural</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterFormJur">Cliente Jurídico</a>
+                    </div>
+                    <span class="linedivide1"></span>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+		</div>
+        {%endif%}
 	</div>
 
 	<!-- top noti -->
@@ -184,7 +199,7 @@
 				<a href="{{url_for('home')}}" class="logo2">
 					<h1>CandyUCAB</h1>
 				</a>
-
+                {% if session['logged_in'] == True %}
 				<div class="topbar-child2">
 					<!--  -->
 					<a href="#" class="header-wrapicon1 dis-block m-l-30">
@@ -271,6 +286,19 @@
 						</div>
 					</div>
 				</div>
+                {%else%}
+                <div class="topbar-child2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdowntop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Registro
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdowntop">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterFormNat">Cliente Natural</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterFormJur">Cliente Jurídico</a>
+                    </div>
+                    <span class="linedivide1"></span>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+				</div>
+                {%endif%}
 			</div>
 
 			<div class="wrap_header">
@@ -324,6 +352,7 @@
 			<!-- Button show menu -->
 			<div class="btn-show-menu">
 				<!-- Header Icon mobile -->
+                {% if session['logged_in'] == True %}
 				<div class="header-icons-mobile">
 					<a href="#" class="header-wrapicon1 dis-block">
 						<img src="{{url_for('static', filename='images/icons/icon-header-01.png')}}" class="header-icon1" alt="ICON">
@@ -409,6 +438,19 @@
 						</div>
 					</div>
 				</div>
+                {%else%}
+                <div class="header-icons-mobile">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdowntop3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Registro
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdowntop3">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterFormNat">Cliente Natural</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterFormJur">Cliente Jurídico</a>
+                    </div>
+                    <span class="linedivide1"></span>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+				</div>
+                {%endif%}
 
 				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
 					<span class="hamburger-box">
@@ -1987,7 +2029,111 @@
 			</div>
 		</div>
 	</div>
+    <!-- Modal cliente natural -->
+    <div class="modal fade" id="modalRegisterFormNat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Registro Cliente Natural</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="" method="POST">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="orangeForm-name" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" id="orangeForm-email" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                        </div>
 
+                        <div class="md-form mb-4">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <input type="password" id="orangeForm-pass" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-deep-orange" type="submit">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- Modal cliente juridico -->
+    <div class="modal fade" id="modalRegisterFormJur" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Registro Cliente Jurídico</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="" method="POST">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="redForm-name" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" id="redForm-email" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <input type="password" id="redForm-pass" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-deep-orange" type="submit" >Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Log In</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="" method="POST">
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-deep-orange" type="submit">Login</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="{{url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->
@@ -1995,6 +2141,7 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="{{url_for('static', filename='vendor/bootstrap/js/popper.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='vendor/mdb/js/mdb.min.js')}}"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="{{url_for('static', filename='vendor/select2/select2.min.js')}}"></script>
 	<script type="text/javascript">
