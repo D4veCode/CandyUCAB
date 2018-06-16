@@ -55,7 +55,7 @@ CREATE Table Contacto(
 	Ci int, 
 	Nombre varchar(20) NOT NULL,
 	Apellido varchar(20) NOT NULL,
-	Fk_Juridico int,
+	Fk_Juridico int NOT NULL,
 	Constraint Pk_Contacto PRIMARY KEY (ID),
 	FOREIGN KEY (Fk_Juridico) REFERENCES Cliente_Juridico(ID)
 	);
@@ -87,7 +87,7 @@ CREATE Table Empleado(
 
 CREATE table Telefono(
 	ID SERIAL,
-	tipo varchar(5) NOT NULL,
+	tipo varchar(20) NOT NULL,
 	numero varchar(15) NOT NULL,
 	Fk_Contacto int,
 	Fk_Natural int,
