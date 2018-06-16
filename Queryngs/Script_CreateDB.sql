@@ -39,13 +39,13 @@ CREATE Table Cliente_Juridico(
 	ID SERIAL UNIQUE,
 	Rif varchar(12),
 	Razon_s varchar(20) NOT NULL UNIQUE,
-	Num_Carnet varchar(12),
+	Num_Carnet varchar(12) UNIQUE,
 	email varchar(20) NOT NULL UNIQUE,
 	Denominacion_C varchar(120) NOT NULL,
 	Pagina_web varchar(60),
 	FK_Usuario varchar(20) NOT NULL,
 	FK_Lugar int NOT NULL,
-	Constraint Pk_ClienteJ PRIMARY KEY(ID, Rif, Num_Carnet),
+	Constraint Pk_ClienteJ PRIMARY KEY(ID, Rif),
 	FOREIGN KEY (FK_Usuario) REFERENCES Usuario (Nombre_Usuario),
 	FOREIGN KEY (Fk_Lugar) REFERENCES Lugar(ID)
 	);
