@@ -23,14 +23,14 @@ CREATE Table Cliente_Natural(
 	ID SERIAL UNIQUE,
 	rif varchar(12),
 	Ci int, 
-	Num_Carnet varchar(12),
+	Num_Carnet varchar(12) UNIQUE,
 	email varchar(20) NOT NULL UNIQUE,
 	Nombre varchar(20) NOT NULL,
 	Apellido varchar(20) NOT NULL,
 	Apellido2 varchar(20), 
 	FK_Usuario varchar(20),
 	FK_Lugar int NOT NULL,
-	Constraint Pk_ClienteNRif PRIMARY KEY (ID ,rif, Ci, Num_Carnet),
+	Constraint Pk_ClienteNRif PRIMARY KEY (ID ,rif, Ci),
 	FOREIGN KEY (FK_Usuario) REFERENCES Usuario (Nombre_Usuario),
 	FOREIGN KEY (Fk_Lugar) REFERENCES Lugar(ID)
 	);
