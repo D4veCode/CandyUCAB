@@ -91,7 +91,6 @@ CREATE table Telefono(
 	numero varchar(15) NOT NULL,
 	Fk_Contacto int,
 	Fk_Natural int,
-	Fk_Juridico int,
 	Fk_Empleado int,
 	Constraint Pk_Telefono PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Contacto) REFERENCES Contacto(ID),
