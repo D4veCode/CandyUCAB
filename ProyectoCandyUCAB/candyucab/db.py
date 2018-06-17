@@ -34,7 +34,7 @@ def get_one_product(id):
     return producto
 
 
-def registro_nat(username, password, ):
+def registro_user(username, password, ):
     con = connect()
 
     con.query("insert into Usuario (Nombre_Usuario,Contraseña) values (%s,%s)", (username,password,))

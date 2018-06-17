@@ -39,7 +39,7 @@ def registro_nat():
     username = request.form['username']
     password = request.form['password']
 
-    db.registro_nat(username, password)
+    db.registro_user(username, password)
 
     return redirect(url_for('home'))
 
@@ -50,6 +50,22 @@ def registro_jur():
     username = request.form['username']
     password = request.form['password']
 
-    db.registro_nat(username, password)
+    db.registro_user(username, password)
 
     return redirect(url_for('home'))
+
+
+@app.route('/admin')
+def admin_home():
+    session['logged_in'] = True
+
+    return render_template('admin.html')
+
+
+@app.route('/admin/productos')
+def admin_prod():
+    session['logged_in'] = True
+    db = candyucab.db
+    productos = db.get_all_productos()
+
+    return render_template('adproduct.html', productos = productos)

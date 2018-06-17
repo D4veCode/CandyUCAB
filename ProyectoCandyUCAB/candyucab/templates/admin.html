@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title> CandyUCAB | {% block title %}{% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=""/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/themify/themify-icons.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/elegant-font/html-css/style.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/animate/animate.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/animsition/css/animsition.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/select2/select2.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/daterangepicker/daterangepicker.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/slick/slick.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/lightbox2/css/lightbox.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/simple-sidebar.css')}}">
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <h5>VISTA ADMINISTRADOR</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_prod')}}">Productos</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Diario Ucab</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Pedidos Listos</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Pedidos Enviandose</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Pedidos Empaquetandose</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Pedidos sin tomar</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Ventas</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Sucursales</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Registrar Cliente</a>
+                </li>
+                <li>
+                    <a href="{{url_for('admin_home')}}">Control</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>CandyUcab</h1>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">MENU</a>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+
+    <!--  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
