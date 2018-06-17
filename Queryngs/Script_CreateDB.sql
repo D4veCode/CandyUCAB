@@ -122,6 +122,7 @@ CREATE Table Producto(
 	Nombre varchar(20) NOT NULL,
 	Precio real NOT NULL,
 	Descripcion varchar(120) NOT NULL,
+	Foto varchar(120),
 	Fk_Tprod varchar(20) NOT NULL,
 	Constraint Pk_Producto PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Tprod) REFERENCES Tipo_producto(nombre)
