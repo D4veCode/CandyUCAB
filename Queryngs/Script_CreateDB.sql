@@ -160,7 +160,6 @@ CREATE Table Inventario(
 CREATE Table Almacen(
 	ID SERIAL,
 	Cant_Prod int NOT NULL,
-	tipo varchar(15) NOT NULL,
 	pasillo varchar(30) NOT NULL,
 	zona varchar(30) NOT NULL,
 	Fk_Inventario int NOT NULL,
