@@ -323,7 +323,7 @@ CREATE Table Pre_Pro(
 CREATE Table Met_Ped(
 	ID SERIAL,
 	Monto real NOT NULL,
-	Fk_Pedido int
+	Fk_Pedido int,
 	Fk_Cheque  int,
 	Fk_Credito int,
 	Fk_Debito int,
