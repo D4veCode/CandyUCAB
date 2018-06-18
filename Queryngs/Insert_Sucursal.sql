@@ -27,6 +27,7 @@ Insert into sucursal(cod,nombre,fk_lugar)values
 (26,'Mini Candy Shop',25+146),
 (27,'Mini Candy Shop',25+66),
 (28,'Mini Candy Shop',25+300),
+(29,'Mini Candy Shop',487+40),
 (30,'Mini Candy Shop',25+365),
 (31,'Mini Candy Shop',25+443),
 (32,'Mini Candy Shop',487+349),
