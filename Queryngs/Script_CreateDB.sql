@@ -209,9 +209,8 @@ CREATE Table Cheque(
 
 CREATE Table Punto(
 	ID SERIAL,
-	Cant real NOT NULL,
+	Cant int NOT NULL,
 	Valor real NOT NULL,
-	Fecha timestamp NOT NULL,
 	Fk_ClienteN int,
 	Fk_ClienteJ int,
 	Constraint Pk_Punto PRIMARY KEY(ID),
@@ -236,17 +235,11 @@ CREATE Table Pedido(
 	ID SERIAL,
 	Monto real NOT NULL,
 	Fecha_C timestamp NOT NULL,
-	Fk_Usuario varchar(20) NOT NULL,
+	Fk_Sucursal int
 	Fk_Presupuesto int,
-	Fk_Cheque  int,
-	Fk_Credito int,
-	Fk_Debito int,
 	Constraint Pk_Pedido PRIMARY KEY(ID),
-	FOREIGN KEY (Fk_Usuario) REFERENCES Usuario(Nombre_Usuario),
-	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID),
-	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
-	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
-	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
+	FOREIGN KEY (Fk_Sucursal) REFERENCES Sucursal(ID),
+	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)
 	);
 
 CREATE Table Status(
@@ -327,3 +320,14 @@ CREATE Table Pre_Pro(
 	FOREIGN KEY (Fk_Producto) REFERENCES Producto(ID),
 	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)											 
 	);
+	
+CREATE Table Met_Ped(
+	ID SERIAL,
+	Monto real NOT NULL,
+	Fk_Cheque  int,
+	Fk_Credito int,
+	Fk_Debito int,
+	Constraint Pk_Met_Ped PRIMARY KEY(ID),
+	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
+	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
+	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
