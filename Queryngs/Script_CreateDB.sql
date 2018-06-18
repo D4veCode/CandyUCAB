@@ -62,7 +62,7 @@ CREATE Table Contacto(
 
 CREATE Table Sucursal(
 	Cod int,
-	Nombre varchar(20) NOT NULL,
+	Nombre varchar(60) NOT NULL,
 	FK_Lugar int NOT NULL,
 	Constraint Pk_Sucursal PRIMARY KEY(Cod),
 	FOREIGN KEY (Fk_Lugar) REFERENCES Lugar(ID)
@@ -323,10 +323,12 @@ CREATE Table Pre_Pro(
 CREATE Table Met_Ped(
 	ID SERIAL,
 	Monto real NOT NULL,
+	Fk_Pedido int
 	Fk_Cheque  int,
 	Fk_Credito int,
 	Fk_Debito int,
 	Constraint Pk_Met_Ped PRIMARY KEY(ID),
+	FOREIGN KEY (Fk_Pedido) REFERENCES Pedido(ID),
 	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
 	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
 	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
