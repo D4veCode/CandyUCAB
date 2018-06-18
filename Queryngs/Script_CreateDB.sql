@@ -331,3 +331,4 @@ CREATE Table Met_Ped(
 	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
 	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
 	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
+	);
