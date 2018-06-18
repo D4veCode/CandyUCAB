@@ -238,7 +238,7 @@ CREATE Table Pedido(
 	Fk_Sucursal int,
 	Fk_Presupuesto int,
 	Constraint Pk_Pedido PRIMARY KEY(ID),
-	FOREIGN KEY (Fk_Sucursal) REFERENCES Sucursal(ID),
+	FOREIGN KEY (Fk_Sucursal) REFERENCES Sucursal(Cod),
 	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)
 	);
 
