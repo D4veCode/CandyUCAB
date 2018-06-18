@@ -27,19 +27,18 @@ Insert into sucursal(cod,nombre,fk_lugar)values
 (26,'Mini Candy Shop',25+146),
 (27,'Mini Candy Shop',25+66),
 (28,'Mini Candy Shop',25+300),
-(29,'Mini Candy Shop',487+40),
-(30,'Mini Candy Shop',25+365),
-(31,'Mini Candy Shop',25+443),
-(32,'Mini Candy Shop',487+349),
-(33,'Mini Candy Shop',25+53),
-(34,'Mini Candy Shop',25+360),
-(35,'Mini Candy Shop',25+451),
-(36,'Mini Candy Shop',25+70),
-(37,'Mini Candy Shop',25+151),
-(38,'Mini Candy Shop',25+240),
-(39,'Mini Candy Shop',25+289),
-(40,'Mini Candy Shop',16),
-(41,'Mini Candy Shop',25+345);
+(29,'Mini Candy Shop',25+365),
+(30,'Mini Candy Shop',25+443),
+(31,'Mini Candy Shop',487+349),
+(32,'Mini Candy Shop',25+53),
+(33,'Mini Candy Shop',25+360),
+(34,'Mini Candy Shop',25+451),
+(35,'Mini Candy Shop',25+70),
+(36,'Mini Candy Shop',25+151),
+(37,'Mini Candy Shop',25+240),
+(38,'Mini Candy Shop',25+289),
+(39,'Mini Candy Shop',16),
+(40,'Mini Candy Shop',25+345);
 
 
 
