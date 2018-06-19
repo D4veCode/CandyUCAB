@@ -235,7 +235,7 @@ CREATE Table Pedido(
 	Monto real NOT NULL,
 	Fecha_C timestamp NOT NULL,
 	Fk_Sucursal int,
-	Fk_Presupuesto int,
+	Fk_Presupuesto int UNIQUE,
 	Constraint Pk_Pedido PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Sucursal) REFERENCES Sucursal(Cod),
 	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)
