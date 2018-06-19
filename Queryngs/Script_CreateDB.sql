@@ -62,7 +62,7 @@ CREATE Table Contacto(
 
 CREATE Table Sucursal(
 	Cod int,
-	Nombre varchar(20) NOT NULL,
+	Nombre varchar(60) NOT NULL,
 	FK_Lugar int NOT NULL,
 	Constraint Pk_Sucursal PRIMARY KEY(Cod),
 	FOREIGN KEY (Fk_Lugar) REFERENCES Lugar(ID)
@@ -162,7 +162,7 @@ CREATE Table Almacen(
 	Cant_Prod int NOT NULL,
 	pasillo varchar(30) NOT NULL,
 	zona varchar(30) NOT NULL,
-	Fk_Inventario int NOT NULL,
+	Fk_Inventario int NOT NULL UNIQUE,
 	Constraint Pk_Alamecen PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Inventario) REFERENCES inventario(ID)
 	);
@@ -235,7 +235,7 @@ CREATE Table Pedido(
 	Monto real NOT NULL,
 	Fecha_C timestamp NOT NULL,
 	Fk_Sucursal int,
-	Fk_Presupuesto int,
+	Fk_Presupuesto int UNIQUE,
 	Constraint Pk_Pedido PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Sucursal) REFERENCES Sucursal(Cod),
 	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)
@@ -323,10 +323,12 @@ CREATE Table Pre_Pro(
 CREATE Table Met_Ped(
 	ID SERIAL,
 	Monto real NOT NULL,
+	Fk_Pedido int,
 	Fk_Cheque  int,
 	Fk_Credito int,
 	Fk_Debito int,
 	Constraint Pk_Met_Ped PRIMARY KEY(ID),
+	FOREIGN KEY (Fk_Pedido) REFERENCES Pedido(ID),
 	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
 	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
 	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
