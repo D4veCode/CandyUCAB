@@ -9,7 +9,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J27345678',27345678,'02-00000004','cliente8@gmail.com','Jesus','Almeida','Gonzalez','ClienteNatural8',487+168),
 ('J28345678',28345678,'01-00000005','cliente9@gmail.com','Jesus','Torrealba','Padron','ClienteNatural9',487+168),
 ('J29345678',29345678,'02-00000005','cliente10@gmail.com','Jesus','Rodriguez','Altuve','ClienteNatural10',487+168),
-
 ('J30345678',30345678,'01-00000006','cliente11@gmail.com','José','Rodriguez','Perez','ClienteNatural11',487+648),
 ('J31345678',31345678,'02-00000006','cliente12@gmail.com','José','Rodriguez','Almeida','ClienteNatural12',487+648),
 ('J32345678',32345678,'01-00000007','cliente13@gmail.com','José','Rodriguez','Andrade','ClienteNatural13',487+648),
@@ -20,7 +19,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J37345678',37345678,'02-00000009','cliente18@gmail.com','José','Almeida','Padron','ClienteNatural18',487+648),
 ('J38345678',38345678,'01-00000010','cliente19@gmail.com','José','Torrealba','Padron','ClienteNatural19',487+648),
 ('J39345678',39345678,'02-00000010','cliente20@gmail.com','José','Rodriguez','Teran','ClienteNatural20',487+648),
-
 ('J26345601',26345601,'01-00000011','cliente21@gmail.com','Isabella','Cardenas','Altuve','ClienteNatural21',487+644),
 ('J26345602',26345602,'02-00000011','cliente22@gmail.com','Isabella','Cardenas','Almeida','ClienteNatural22',487+644),
 ('J26345603',26345603,'01-00000012','cliente23@gmail.com','Isabella','Contreras','Lopez','ClienteNatural23',487+644),
@@ -31,7 +29,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J26345608',26345608,'02-00000014','cliente28@gmail.com','Isabella','Ortiz','Gonzalez','ClienteNatural28',487+644),
 ('J26345609',26345609,'01-00000015','cliente29@gmail.com','Isabella','Torrealba','Padron','ClienteNatural29',487+644),
 ('J26345610',26345610,'02-00000015','cliente30@gmail.com','Isabella','Ortiz','Altuve','ClienteNatural30',487+644),
-
 ('J26345611',26345611,'01-00000016','cliente31@gmail.com','Andrea','Perez','Rodriguez','ClienteNatural31',487+637),
 ('J26345612',26345612,'02-00000016','cliente32@gmail.com','Andrea','Hernandez','Rodriguez','ClienteNatural32',487+637),
 ('J26345613',26345613,'01-00000017','cliente33@gmail.com','Andrea','Lozano','Rodriguez','ClienteNatural33',487+637),
@@ -42,7 +39,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J26345618',26345618,'02-00000019','cliente38@gmail.com','Andrea','Lopez','Almeida','ClienteNatural38',487+637),
 ('J26345619',26345619,'01-00000020','cliente39@gmail.com','Andrea','Hernandez','Torrealba','ClienteNatural39',487+637),
 ('J26345620',26345620,'02-00000020','cliente40@gmail.com','Andrea','Fernandez','Rodriguez','ClienteNatural40',487+637),
-
 ('J26345621',26345621,'01-00000021','cliente41@gmail.com','Carlos','Rodriguez','Altuve','ClienteNatural41',487+807),
 ('J26345622',26345622,'02-00000021','cliente42@gmail.com','Carlos','Rodriguez','Almeida','ClienteNatural42',487+807),
 ('J26345623',26345623,'01-00000022','cliente43@gmail.com','Carlos','Rodriguez','Lopez','ClienteNatural43',487+807),
@@ -53,7 +49,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J26345628',26345628,'02-00000024','cliente48@gmail.com','Carlos','Almeida','Gonzalez','ClienteNatural48',487+807),
 ('J26345629',26345629,'01-00000025','cliente49@gmail.com','Carlos','Torrealba','Padron','ClienteNatural49',487+807),
 ('J26345630',26345630,'02-00000025','cliente50@gmail.com','Carlos','Rodriguez','Altuve','ClienteNatural50',487+807),
-
 ('J26345631',26345631,'01-00000026','cliente51@gmail.com','Luis','Rodriguez','Altuve','ClienteNatural51',487+829),
 ('J26345632',26345632,'02-00000026','cliente52@gmail.com','Luis','Rodriguez','Almeida','ClienteNatural52',487+829),
 ('J26345633',26345633,'01-00000027','cliente53@gmail.com','Luis','Rodriguez','Lopez','ClienteNatural53',487+829),
@@ -64,7 +59,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J26345638',26345638,'02-00000029','cliente58@gmail.com','Luis','Almeida','Gonzalez','ClienteNatural58',487+829),
 ('J26345639',26345639,'01-00000030','cliente59@gmail.com','Luis','Torrealba','Padron','ClienteNatural59',487+829),
 ('J26345640',26345640,'02-00000030','cliente60@gmail.com','Luis','Rodriguez','Altuve','ClienteNatural60',487+829),
-
 ('J26345641',26345641,'01-00000031','cliente61@gmail.com','Juan','Rodriguez','Altuve','ClienteNatural61',487+796),
 ('J26345642',26345642,'02-00000031','cliente62@gmail.com','Juan','Rodriguez','Almeida','ClienteNatural62',487+796),
 ('J26345643',26345643,'01-00000032','cliente63@gmail.com','Juan','Rodriguez','Lopez','ClienteNatural63',487+796),
@@ -75,7 +69,6 @@ Insert into cliente_natural(rif,ci,num_carnet,email,nombre,apellido,apellido2,fk
 ('J26345648',26345648,'02-00000034','cliente68@gmail.com','Juan','Almeida','Gonzalez','ClienteNatural68',487+796),
 ('J26345649',26345649,'01-00000035','cliente69@gmail.com','Juan','Torrealba','Padron','ClienteNatural69',487+796),
 ('J26345650',26345650,'02-00000035','cliente70@gmail.com','Juan','Rodriguez','Altuve','ClienteNatural70',487+796),
-
 ('J26345651',26345651,'01-00000036','cliente71@gmail.com','Valentina','Rodriguez','Altuve','ClienteNatural71',487+958),
 ('J26345652',26345652,'02-00000036','cliente72@gmail.com','Valentina','Rodriguez','Almeida','ClienteNatural72',487+958),
 ('J26345653',26345653,'01-00000037','cliente73@gmail.com','Valentina','Rodriguez','Lopez','ClienteNatural73',487+958),
