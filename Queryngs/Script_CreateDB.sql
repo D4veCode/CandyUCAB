@@ -162,7 +162,7 @@ CREATE Table Almacen(
 	Cant_Prod int NOT NULL,
 	pasillo varchar(30) NOT NULL,
 	zona varchar(30) NOT NULL,
-	Fk_Inventario int NOT NULL,
+	Fk_Inventario int NOT NULL UNIQUE,
 	Constraint Pk_Alamecen PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Inventario) REFERENCES inventario(ID)
 	);
