@@ -34,8 +34,8 @@ def venta_inventario(tienda, carro):
 
 def generar_pedido(carro, tienda, fecha):
     con = connect()
-    #con.query("insert into pedido (Monto, Fecha_C, Fk_Sucursal, Fk_Presupuesto)values((select sum(total) from pre_pro where Fk_presupuesto = $1),$2,$3,$4)", (carro, fecha, tienda, carro,))
-    #con.query("insert into EstadoPedido(Fecha_I, Fk_Pedido, Fk_Status)values($1,(select ID from pedido where fk_presupuesto = $2), 1)", (fecha, carro,))
+    con.query("insert into pedido (Monto, Fecha_C, Fk_Sucursal, Fk_Presupuesto)values((select sum(total) from pre_pro where Fk_presupuesto = $1),$2,$3,$4)", (carro, fecha, tienda, carro,))
+    con.query("insert into EstadoPedido(Fecha_I, Fk_Pedido, Fk_Status)values($1,(select ID from pedido where fk_presupuesto = $2), 1)", (fecha, carro,))
     venta_inventario(tienda, carro, )
 
     con.close()
@@ -48,5 +48,12 @@ def pagar(carro, credit, debit, tienda, fecha):
         con.query("insert into Met_Ped(Monto,fk_pedido, Fk_Credito)values((select sum(total) from pre_pro where Fk_presupuesto = $1), (select ID from pedido where fk_presupuesto = $2), $3)", (carro, carro, credit,))
     else:
         con.query("insert into Met_Ped(Monto,fk_pedido, Fk_Debito)values((select sum(total) from pre_pro where Fk_presupuesto = $1), (select ID from pedido where fk_presupuesto = $2), $3)", (carro, carro, debit,))
+
+    con.close()
+
+
+def alterstatus(pedido,fecha):
+    con = connect()
+    con.query("insert into EstadoPedido(Fecha_I, Fk_Pedido, Fk_Status)values($1,$2,1+(select MAX(Fk_Status) from Estadopedido where Fk_pedido = $3));",(fecha, pedido, pedido,))
 
     con.close()
