@@ -24,7 +24,7 @@ CREATE Table Cliente_Natural(
 	rif varchar(12),
 	Ci int, 
 	Num_Carnet varchar(12) UNIQUE,
-	email varchar(20) NOT NULL UNIQUE,
+	email varchar(40) NOT NULL UNIQUE,
 	Nombre varchar(20) NOT NULL,
 	Apellido varchar(20) NOT NULL,
 	Apellido2 varchar(20), 
@@ -40,7 +40,7 @@ CREATE Table Cliente_Juridico(
 	Rif varchar(12),
 	Razon_s varchar(20) NOT NULL UNIQUE,
 	Num_Carnet varchar(12) UNIQUE,
-	email varchar(20) NOT NULL UNIQUE,
+	email varchar(40) NOT NULL UNIQUE,
 	Denominacion_C varchar(120) NOT NULL,
 	Pagina_web varchar(60),
 	FK_Usuario varchar(20) NOT NULL,
@@ -55,14 +55,14 @@ CREATE Table Contacto(
 	Ci int, 
 	Nombre varchar(20) NOT NULL,
 	Apellido varchar(20) NOT NULL,
-	Fk_Juridico int,
+	Fk_Juridico int NOT NULL,
 	Constraint Pk_Contacto PRIMARY KEY (ID),
 	FOREIGN KEY (Fk_Juridico) REFERENCES Cliente_Juridico(ID)
 	);
 
 CREATE Table Sucursal(
 	Cod int,
-	Nombre varchar(20) NOT NULL,
+	Nombre varchar(60) NOT NULL,
 	FK_Lugar int NOT NULL,
 	Constraint Pk_Sucursal PRIMARY KEY(Cod),
 	FOREIGN KEY (Fk_Lugar) REFERENCES Lugar(ID)
@@ -87,7 +87,7 @@ CREATE Table Empleado(
 
 CREATE table Telefono(
 	ID SERIAL,
-	tipo varchar(5) NOT NULL,
+	tipo varchar(20) NOT NULL,
 	numero varchar(15) NOT NULL,
 	Fk_Contacto int,
 	Fk_Natural int,
@@ -162,10 +162,10 @@ CREATE Table Inventario(
 CREATE Table Almacen(
 	ID SERIAL,
 	Cant_Prod int NOT NULL,
-	tipo varchar(15) NOT NULL,
+	
 	pasillo varchar(30) NOT NULL,
 	zona varchar(30) NOT NULL,
-	Fk_Inventario int NOT NULL,
+	Fk_Inventario int NOT NULL UNIQUE,
 	Constraint Pk_Alamecen PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Inventario) REFERENCES inventario(ID)
 	);
@@ -211,7 +211,7 @@ CREATE Table Cheque(
 
 CREATE Table Punto(
 	ID SERIAL,
-	Cant real NOT NULL,
+	Cant int NOT NULL,
 	Valor real NOT NULL,
 	Fecha timestamp NOT NULL,
 	Fk_ClienteN int,
@@ -238,17 +238,11 @@ CREATE Table Pedido(
 	ID SERIAL,
 	Monto real NOT NULL,
 	Fecha_C timestamp NOT NULL,
-	Fk_Usuario varchar(20) NOT NULL,
-	Fk_Presupuesto int,
-	Fk_Cheque  int,
-	Fk_Credito int,
-	Fk_Debito int,
+	Fk_Sucursal int,
+	Fk_Presupuesto int UNIQUE,
 	Constraint Pk_Pedido PRIMARY KEY(ID),
-	FOREIGN KEY (Fk_Usuario) REFERENCES Usuario(Nombre_Usuario),
-	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID),
-	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
-	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
-	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
+	FOREIGN KEY (Fk_Sucursal) REFERENCES Sucursal(Cod),
+	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)
 	);
 
 CREATE Table Status(
@@ -328,4 +322,18 @@ CREATE Table Pre_Pro(
 	Constraint Pk_Pre_Pro PRIMARY KEY(ID),
 	FOREIGN KEY (Fk_Producto) REFERENCES Producto(ID),
 	FOREIGN KEY (Fk_Presupuesto) REFERENCES Presupuesto(ID)											 
+	);
+	
+CREATE Table Met_Ped(
+	ID SERIAL,
+	Monto real NOT NULL,
+	Fk_Pedido int,
+	Fk_Cheque  int,
+	Fk_Credito int,
+	Fk_Debito int,
+	Constraint Pk_Met_Ped PRIMARY KEY(ID),
+	FOREIGN KEY (Fk_Pedido) REFERENCES Pedido(ID),
+	FOREIGN KEY (Fk_Cheque) REFERENCES Cheque(ID),
+	FOREIGN KEY (Fk_Credito) REFERENCES Credito(ID),
+	FOREIGN KEY (Fk_Debito) REFERENCES Debito(ID)
 	);
