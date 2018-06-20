@@ -1,0 +1,72 @@
+{% extends 'admin.html'%}
+
+{%block title %}Agregar Cliente Natural {%endblock%}
+
+{%block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Agregar Cliente Natural</div>
+
+                <div class="card-body">
+
+                    <form action="{{ url_for('admin.registro_nat') }}" method="POST" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="nombre" id="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido2">Segundo Apellido</label>
+                            <input type="text" name="apellido2" id="apellido2" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="rif">RIF</label>
+                            <input type="text" name="rif" id="rif" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="ci">Cedula de identidad</label>
+                            <input type="text" name="ci" id="ci" class="form-control">
+                        </div>
+                        <label for="estado">Estado</label>
+                        <select class="form-control" name="estado" id="estado">
+                            <option disabled>Seleccione Estado</option>
+                            {% for est in estados %}
+                            <option value="{{est.id}}">{{est.nombre}}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <label for="muni">Municipio</label>
+                        <select class="form-control" name="municipio" id="muni">
+                            <option disabled>Seleccione Municipio</option>
+                            {% for tipo in tipo_prod %}
+                            <option value="{{tipo.nombre}}">{{tipo.nombre}}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <label for="parroquia">Parroquia</label>
+                        <select class="form-control" name="parroquia" id="parroquia">
+                            <option disabled>Seleccione Parroquia</option>
+                            {% for tipo in tipo_prod %}
+                            <option value="{{tipo.nombre}}">{{tipo.nombre}}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,46 @@
+{% extends 'admin.html'%}
+{%block title %}Agregar Producto {% endblock %}
+
+{%block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Agregar Producto</div>
+
+                <div class="card-body">
+
+
+                    <form action="{{ url_for('admin.addproduct') }}" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="fileimage">Imagen</label>
+                            <input type="file" name="fileimage" id="fileimage" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Nombre</label>
+                            <input type="text" name="nombre" id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Descripcion</label>
+                            <input type="text" name="description" id="description" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Precio</label>
+                            <input type="text" name="precio" id="precio"class="form-control" placeholder="Bs.">
+                        </div>
+                        <select class="form-control" name="t_prod">
+                            <option disabled>Seleccione un tipo de caramelo</option>
+                            {% for tipo in tipo_prod %}
+                            <option value="{{tipo.nombre}}">{{tipo.nombre}}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <button type="submit" class="btn btn-primary    ">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,34 @@
+drop table Met_Ped;
+drop table Pre_Pro;
+drop table Asistencia;
+drop table Priv_Rol;
+drop table Privilegio;
+drop table ROL;
+drop table Vacacion;
+drop table Beneficio;
+drop table EstadoPedido;
+drop table Status;
+drop table Pedido;
+drop table Presupuesto;
+drop table Punto;
+drop table Cheque;
+drop table Debito;
+drop table Credito;
+drop table Almacen;
+drop table Inventario;
+drop table Sabor_Producto;
+drop table Diario_Dulce;
+drop table Producto;
+drop table Fecha_Diario;
+drop table Tipo_Producto;
+drop table Sabor;
+drop table Telefono;
+drop table Empleado;
+drop table Sucursal;
+drop table Contacto;
+drop table Cliente_Juridico;
+drop table Cliente_Natural;
+drop table Lugar;
+drop table Usuario;
+
+

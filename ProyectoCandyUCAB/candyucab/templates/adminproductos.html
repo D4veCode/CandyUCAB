@@ -1,0 +1,42 @@
+{% extends 'admin.html'%}
+
+{%block title %}Agregar Cliente Juridico {%endblock%}
+
+{%block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Listado de Productos <a href="{{ url_for('admin.addproduct') }}" class="btn btn-primary">Añadir nuevo Producto</a></div>
+
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>#</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Tipo</th>
+                            <th colspan="2">Acciones</th>
+                        </tr>
+                        {% for prod in productos %}
+                        <tr>
+                            <td>{{ prod.id }}</td>
+                            <td><img src="{{url_for('static', filename='images/'+prod.foto)}}" alt="{{ prod.foto }}" width="150" height="150"></td>
+                            <td>{{ prod.nombre }}</td>
+                            <td>{{ prod.descripcion }}</td>
+                            <td>{{ prod.precio }} Bs.</td>
+                            <td>{{ prod.fk_tprod }}</td>
+                            <td><a href="" class="btn btn-primary">Edit</a></td>
+                            <td><a href="" class="btn btn-danger">Delete</a></td>
+                        </tr>
+                        {%endfor%}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
