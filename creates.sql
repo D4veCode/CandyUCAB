@@ -51,9 +51,10 @@ CREATE Table Contacto(
 	Ci int, 
 	Nombre varchar(20) NOT NULL,
 	Apellido varchar(20) NOT NULL,
-	Fk_Juridico int NOT NULL,
+	Fk_JuridicoId int NOT NULL,
+	Fk_JuridicoRif varchar(14) NOT NULL,
 	Constraint Pk_Contacto PRIMARY KEY (ID),
-	FOREIGN KEY (Fk_Juridico) REFERENCES Cliente_Juridico(ID)
+	FOREIGN KEY (Fk_JuridicoId,Fk_JuridicoRif) REFERENCES Cliente_Juridico(ID,Rif)
 	);
 
 CREATE Table Sucursal(
