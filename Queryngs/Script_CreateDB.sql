@@ -40,7 +40,7 @@ CREATE Table Cliente_Juridico(
 	email varchar(40) NOT NULL UNIQUE,
 	Denominacion_C varchar(120) NOT NULL,
 	Pagina_web varchar(60),
-	FK_Usuario varchar(20) NOT NULL,
+	FK_Usuario varchar(20),
 	FK_Lugar int NOT NULL,
 	Constraint Pk_ClienteJ PRIMARY KEY(ID, Rif),
 	FOREIGN KEY (FK_Usuario) REFERENCES Usuario (Nombre_Usuario),
