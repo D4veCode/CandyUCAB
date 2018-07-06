@@ -1,0 +1,10 @@
+insert into diario_dulce (id, fk_producto, fk_diario) values (1, 8, 1);
+insert into diario_dulce (id, fk_producto, fk_diario) values (2, 7, 2);
+insert into diario_dulce (id, fk_producto, fk_diario) values (3, 6, 3);
+insert into diario_dulce (id, fk_producto, fk_diario) values (4, 9, 4);
+insert into diario_dulce (id, fk_producto, fk_diario) values (5, 9, 5);
+insert into diario_dulce (id, fk_producto, fk_diario) values (6, 5, 6);
+insert into diario_dulce (id, fk_producto, fk_diario) values (7, 3, 7);
+insert into diario_dulce (id, fk_producto, fk_diario) values (8, 10, 8);
+insert into diario_dulce (id, fk_producto, fk_diario) values (9, 10, 9);
+insert into diario_dulce (id, fk_producto, fk_diario) values (10, 9, 10);

@@ -1,0 +1,10 @@
+insert into fecha_diario (id, fecha_i, fecha_f) values (1, '2018-03-08 14:01:39', '2017-12-01 18:20:52');
+insert into fecha_diario (id, fecha_i, fecha_f) values (2, '2018-04-16 19:06:12', '2018-04-21 00:20:50');
+insert into fecha_diario (id, fecha_i, fecha_f) values (3, '2017-10-24 14:42:59', '2018-05-23 19:37:46');
+insert into fecha_diario (id, fecha_i, fecha_f) values (4, '2017-08-04 00:12:13', '2017-08-07 00:02:05');
+insert into fecha_diario (id, fecha_i, fecha_f) values (5, '2018-02-09 22:04:02', '2018-02-18 12:07:19');
+insert into fecha_diario (id, fecha_i, fecha_f) values (6, '2018-01-12 21:23:55', '2017-08-28 17:10:05');
+insert into fecha_diario (id, fecha_i, fecha_f) values (7, '2018-02-21 22:45:43', '2018-06-28 17:21:39');
+insert into fecha_diario (id, fecha_i, fecha_f) values (8, '2018-03-11 19:23:29', '2018-04-01 11:34:47');
+insert into fecha_diario (id, fecha_i, fecha_f) values (9, '2017-07-31 16:22:23', '2018-03-21 17:57:37');
+insert into fecha_diario (id, fecha_i, fecha_f) values (10, '2018-01-30 11:59:11', '2018-01-22 11:20:01');

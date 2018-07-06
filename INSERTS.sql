@@ -3808,6 +3808,60 @@ insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (8, '11/05/2
 insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (9, '05/09/2017', 9, 3);
 insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (10, '26/04/2018', 10, 1);
 
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (1, 1031.56, 1, null, null, 36);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (2, 1606.84, 2, null, null, 66);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (3, 74.78, 3, null, null, 79);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (4, 1298.72, 4, null, null, 34);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (5, 9830.49, 5, null, null, 32);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (6, 7574.26, 6, null, 52, null);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (7, 5631.34, 7, null, 22, null);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (8, 5991.16, 6, null, 23, null);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (9, 2485.56, 9, null, 75, null);
+insert into met_ped (id, monto, fk_pedido, fk_cheque, fk_credito, fk_debito) values (10, 4136.93, 10, 25, null, null);
+
+insert into fecha_diario (id, fecha_i, fecha_f) values (1, '2018-03-08 14:01:39', '2017-12-01 18:20:52');
+insert into fecha_diario (id, fecha_i, fecha_f) values (2, '2018-04-16 19:06:12', '2018-04-21 00:20:50');
+insert into fecha_diario (id, fecha_i, fecha_f) values (3, '2017-10-24 14:42:59', '2018-05-23 19:37:46');
+insert into fecha_diario (id, fecha_i, fecha_f) values (4, '2017-08-04 00:12:13', '2017-08-07 00:02:05');
+insert into fecha_diario (id, fecha_i, fecha_f) values (5, '2018-02-09 22:04:02', '2018-02-18 12:07:19');
+insert into fecha_diario (id, fecha_i, fecha_f) values (6, '2018-01-12 21:23:55', '2017-08-28 17:10:05');
+insert into fecha_diario (id, fecha_i, fecha_f) values (7, '2018-02-21 22:45:43', '2018-06-28 17:21:39');
+insert into fecha_diario (id, fecha_i, fecha_f) values (8, '2018-03-11 19:23:29', '2018-04-01 11:34:47');
+insert into fecha_diario (id, fecha_i, fecha_f) values (9, '2017-07-31 16:22:23', '2018-03-21 17:57:37');
+insert into fecha_diario (id, fecha_i, fecha_f) values (10, '2018-01-30 11:59:11', '2018-01-22 11:20:01');
+
+insert into diario_dulce (id, fk_producto, fk_diario) values (1, 8, 1);
+insert into diario_dulce (id, fk_producto, fk_diario) values (2, 7, 2);
+insert into diario_dulce (id, fk_producto, fk_diario) values (3, 6, 3);
+insert into diario_dulce (id, fk_producto, fk_diario) values (4, 9, 4);
+insert into diario_dulce (id, fk_producto, fk_diario) values (5, 9, 5);
+insert into diario_dulce (id, fk_producto, fk_diario) values (6, 5, 6);
+insert into diario_dulce (id, fk_producto, fk_diario) values (7, 3, 7);
+insert into diario_dulce (id, fk_producto, fk_diario) values (8, 10, 8);
+insert into diario_dulce (id, fk_producto, fk_diario) values (9, 10, 9);
+insert into diario_dulce (id, fk_producto, fk_diario) values (10, 9, 10);
+
+
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (1, 2521, 59.97, 31, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (2, 6879, 33.26, 40, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (3, 3891, 59.33, 16, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (4, 733, 83.16, 5, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (5, 7632, 57.13, 7, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (6, 3859, 54.87, 56, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (7, 4233, 49.91, 19, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (8, 1540, 24.37, 23, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (9, 5628, 51.32, 11, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (10, 6858, 91.96, 64, null);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (11, 4188, 36.3, null, 2);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (12, 1899, 75.31, null, 55);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (13, 4705, 31.33, null, 5);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (14, 2600, 42.76, null, 19);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (15, 2068, 69.36, null, 56);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (16, 2271, 63.17, null, 78);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (17, 7003, 50.97, null, 15);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (18, 2185, 64.94, null, 31);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (19, 9401, 90.44, null, 69);
+insert into punto (id, cant, valor, fk_clienten, fk_clientej) values (20, 4559, 43.54, null, 42);
 
 
 
