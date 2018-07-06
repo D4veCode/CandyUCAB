@@ -1,0 +1,10 @@
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (1, '17/11/2017', 1, 4);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (2, '14/07/2017', 2, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (3, '07/05/2018', 3, 3);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (4, '06/12/2017', 4, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (5, '22/01/2018', 5, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (6, '01/05/2018', 6, 5);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (7, '25/11/2017', 7, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (8, '11/05/2018', 8, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (9, '05/09/2017', 9, 3);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (10, '26/04/2018', 10, 1);

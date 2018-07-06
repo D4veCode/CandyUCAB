@@ -218,11 +218,12 @@ CREATE Table Presupuesto(
 	ID SERIAL,
 	Monto int NOT NULL,
 	Fecha_D date NOT NULL,
-	Fk_Usuario varchar(20),
+	Fk_UsuarioID int,
+	Fk_UsuarioN varchar(20),
 	Fk_ClienteN int,
 	Fk_ClienteJ int,
 	Constraint Pk_Presupuesto PRIMARY KEY(ID),
-	FOREIGN KEY (Fk_Usuario)  REFERENCES Usuario(Nombre_usuario),
+	FOREIGN KEY (Fk_UsuarioID,FK_UsuarioN)  REFERENCES Usuario(ID,Nombre_usuario),
 	FOREIGN KEY (Fk_ClienteN) REFERENCES Cliente_Natural(ID),
 	FOREIGN KEY (Fk_ClienteJ) REFERENCES Cliente_Juridico(ID)
 	);

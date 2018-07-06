@@ -1,0 +1,10 @@
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (1, 88, 1215.84, 1, 1);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (2, 57, 9892.73, 2, 2);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (3, 38, 8938.75, 3, 3);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (4, 71, 9300.97, 4, 4);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (5, 86, 5885.13, 5, 5);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (6, 40, 9317.6, 6, 6);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (7, 74, 9811.1, 7, 7);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (8, 92, 6872.71, 8, 8);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (9, 97, 4093.49, 9, 9);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (10, 8, 958.69, 10, 10);

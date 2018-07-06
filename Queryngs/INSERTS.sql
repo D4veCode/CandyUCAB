@@ -3764,6 +3764,50 @@ insert into debito (id, numero, nombre_t, cod_s, banco, fk_clienten, fk_clientej
 insert into debito (id, numero, nombre_t, cod_s, banco, fk_clienten, fk_clientej) values (79, '6761639211713384', 'maestro', 339, 'Bancaribe', 79, null);
 insert into debito (id, numero, nombre_t, cod_s, banco, fk_clienten, fk_clientej) values (80, '3561740710415056', 'jcb', 561, 'Bancaribe', 80, null);
 
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (1, 23, '2017-10-27 13:56:46', 122, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (2, 31, '2017-11-04 04:33:26', 131, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (3, 36, '2018-03-27 04:03:15', 117, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (4, 21, '2018-01-04 23:22:36', 158, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (5, 25, '2017-10-12 21:35:58', 97, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (6, 31, '2017-07-17 17:24:23', 85, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (7, 38, '2018-05-08 08:25:56', 142, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (8, 35, '2017-08-22 09:00:30', 89, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (9, 37, '2018-03-13 05:46:13', 94, null, null, null);
+insert into presupuesto (id, monto, fecha_d, fk_usuarioid, fk_usuarion, fk_clienten, fk_clientej) values (10, 35, '2017-12-22 21:29:26', 144, null, null, null);
+
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (1, 38.39, '2018-05-01 15:25:13', 4, 1);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (2, 20.58, '2018-05-13 17:44:12', 37, 2);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (3, 35.17, '2018-04-19 00:22:18', 34, 3);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (4, 35.52, '2018-04-16 12:51:10', 5, 4);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (5, 35.24, '2017-12-12 23:55:24', 39, 5);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (6, 20.59, '2017-11-26 22:24:16', 27, 6);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (7, 24.75, '2018-02-17 05:53:57', 27, 7);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (8, 26.31, '2017-10-26 14:05:47', 16, 8);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (9, 25.42, '2017-11-08 00:22:53', 8, 9);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (10, 36.74, '2017-08-10 19:35:16', 4, 10);
+
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (1, 88, 1215.84, 1, 1);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (2, 57, 9892.73, 2, 2);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (3, 38, 8938.75, 3, 3);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (4, 71, 9300.97, 4, 4);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (5, 86, 5885.13, 5, 5);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (6, 40, 9317.6, 6, 6);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (7, 74, 9811.1, 7, 7);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (8, 92, 6872.71, 8, 8);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (9, 97, 4093.49, 9, 9);
+insert into pre_pro (id, cant, total, fk_producto, fk_presupuesto) values (10, 8, 958.69, 10, 10);
+
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (1, '17/11/2017', 1, 4);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (2, '14/07/2017', 2, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (3, '07/05/2018', 3, 3);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (4, '06/12/2017', 4, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (5, '22/01/2018', 5, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (6, '01/05/2018', 6, 5);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (7, '25/11/2017', 7, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (8, '11/05/2018', 8, 1);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (9, '05/09/2017', 9, 3);
+insert into estadopedido (id, fecha_i, fk_pedido, fk_status) values (10, '26/04/2018', 10, 1);
+
 
 
 

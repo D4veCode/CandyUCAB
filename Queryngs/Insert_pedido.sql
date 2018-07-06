@@ -1,0 +1,10 @@
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (1, 38.39, '2018-05-01 15:25:13', 4, 1);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (2, 20.58, '2018-05-13 17:44:12', 37, 2);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (3, 35.17, '2018-04-19 00:22:18', 34, 3);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (4, 35.52, '2018-04-16 12:51:10', 5, 4);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (5, 35.24, '2017-12-12 23:55:24', 39, 5);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (6, 20.59, '2017-11-26 22:24:16', 27, 6);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (7, 24.75, '2018-02-17 05:53:57', 27, 7);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (8, 26.31, '2017-10-26 14:05:47', 16, 8);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (9, 25.42, '2017-11-08 00:22:53', 8, 9);
+insert into pedido (id, monto, fecha_c, fk_sucursal, fk_presupuesto) values (10, 36.74, '2017-08-10 19:35:16', 4, 10);
